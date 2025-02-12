@@ -1,0 +1,85 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff4d6d, #ff8fa3); /* Romantic Gradient */
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* GIF */
+.container .tenor-gif-embed {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Headings & Text */
+h1 {
+    color: #ff1e56;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Buttons */
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #ff1e56; /* Deep Love Red */
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 30, 86, 0.4);
+}
+
+.btn a:hover {
+    background-color: #ff8fa3; /* Soft Blush Pink */
+    transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
